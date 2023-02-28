@@ -1,1 +1,1 @@
-console.log("loh))")
+import './sass/style.scss'
