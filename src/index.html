@@ -11,8 +11,64 @@
 </head>
 
 <body>
+    <div id="app">
+        <div class="workspace">
+            <div class="block-selection">
+                <div class="select-block__btn active-block">
+                    <h2>Form</h2>
+                </div>
+                <div class="select-block__btn">
+                    <h2>Templates</h2>
+                </div>
+                <span class="active-block-underline"></span>
+            </div>
+            <form action="#" class="form">
+                <fieldset class="form-block about-you">
+                    <legend>About you</legend>
+                    <fieldset class="inputs-block">
+                        <legend>Name</legend>
+                        <input type="text" class="name-input" placeholder="First name">
+                        <input type="text" class="surname-input" placeholder="Surname">
+                    </fieldset>
+                    <fieldset class="inputs-block">
+                        <legend>Birth info</legend>
+                        <input type="month" placeholder="Birth month" class="birthmonth-input">
+                        <input type="place" placeholder="Birthplace" class="birthplace-input">
+                    </fieldset>
+                </fieldset>
 
-    <h1>hello world!</h1>
+                <fieldset class="form-block expirience">
+                    <legend>Expirience</legend>
+                    <fieldset class="inputs-block">
+                        <legend>Place of work</legend>
+                        <input type="text" class="workplace-input" placeholder="Name of the place of work">
+                        <input type="text" class="post-input" placeholder="Post">
+                    </fieldset>
+                    <div class="inputs-line">
+                        <div>
+                            <p>From</p><input type="month" class="work-from-input">
+                        </div>
+                        <div>
+                            <p>To</p><input type="month" class="work-to-input">
+                        </div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset class="form-block description">
+                    <legend>Description</legend>
+                    <textarea class="description-input" placeholder="Write something about you..."></textarea>
+                </fieldset>
+                <input type="submit" class="submit-btn" value="Submit">
+            </form>
+
+        </div>
+
+        <div class="result">
+            <div class="resume"></div>
+            <button class="save-btn">Save</button>
+        </div>
+    </div>
 </body>
 
 </html>
