@@ -10,9 +10,20 @@ const PDFopt = {
     jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
 }
 
+const person = {
+    name: "",
+    surname: "",
+    birthday: "",
+    birthplace: "",
+    expirience: [],
+    aboutMe: "",
+}
+
+const currentTemplate = ""
 
 const nameInp = document.querySelector(".name-input"),
     surnameInp = document.querySelector(".surname-input"),
+    imgInp = document.querySelector(".img-input"),
     birthmonthInp = document.querySelector(".birthmonth-input"),
     birthplaceInp = document.querySelector(".birthplace-input"),
     workplaceInp = document.querySelector(".workplace-input"),
@@ -27,6 +38,7 @@ const resume = document.querySelector(".resume");
 submitBtn.onclick = () => {
     resume.innerHTML = `<h1>${nameInp.value} ${surnameInp.value}</h1>
                         <p>Birth info: was born in ${birthmonthInp.value} in ${birthplaceInp.value}</p>
+                        <img src="${imgInp.value}">
                         <h2>Expirience</h2>
                         <h3>${workplaceInp.value}</h3>
                         <p>${postInp.value}</p>
@@ -40,5 +52,3 @@ saveBtn.onclick = () => {
         toPDF().from(canvas).set(PDFopt).save()
     });
 }
-
-// toPDF().from(canvas).set(PDFopt).save()

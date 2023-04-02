@@ -163,7 +163,7 @@ section,
         }
     }
 
-    .result {
+    .previewspace {
         min-height: 100vh;
         width: 60vw;
         overflow-y: auto;
@@ -172,7 +172,6 @@ section,
 
         .resume {
             width: 50vw;
-            padding: 30px;
             margin: 0 auto;
             height: calc(50vw * 1.294117647058824);
             background: rgb(232, 232, 232);
